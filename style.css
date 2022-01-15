@@ -4,9 +4,11 @@ font-family: 'Roboto Condensed', sans-serif;
 
 }
 main{
+    
     display: flex;
     flex-direction: column;
     align-items: center;}
+
 nav ul{
     list-style: none;
     display: flex;
@@ -17,7 +19,7 @@ nav ul{
 nav a{
     text-decoration: none;
     color: black;
-    font-size: 1.5em
+    font-size: 1.5em;
 }
 nav li
 {
@@ -29,9 +31,9 @@ nav li
     
 }
 .container
-{   display: grid;
-    align-items: center;
-    background-color: cornsilk;
+{  
+    
+    background-color: #FFFFFF;
     width: 900px;
     padding: 30px;
     margin-top: 21px;
@@ -46,6 +48,12 @@ nav li
     grid-column-gap: 20px;
     
 }
+.transition:hover
+{
+transform: scale(1.5);
+transition: transform 1s ease-in-out;
+}
+
 .button
 {
     text-decoration: none;
@@ -78,49 +86,59 @@ nav li
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px; 
-    grid-row-gap: 30px;  
-    
-
-}
-.ProductOfImage
-{width: 150px;
-    height: 100%;
-}
-
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+} 
 .product
 {
-    display: grid;
-    align-items: center;
+    background-color: whitesmoke;
+    box-shadow: 10px 10px 40px gray;
+    width: 100%;
     
-    background-color: rgb(230, 218, 218);
+    margin-right: 5%;
+    border-radius: 10px;
     
 }
 .product-detail
 {
-    width: 180px;
+    margin-left: 10px;
 }
-
-
-.section-title
-{
-    text-align: center;
-}
-
-
-
-.fa-star
+.fa-star .fa-star-half-alt
 {
 font-size: 12px;
 }
-.fa-star.filled
+.fa-star.filled 
 {
 
 color: #FFC014;
 }
+.fa-star-half-alt
+{
+
+    color: #FFC014;
+    }
+
 .fa-star.empty
 {
     color: #AEAEAE;
+}
+.studio-features
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    
+}
+.photo-studio
+{
+   display: flex;
+}
+footer
+{
+    text-align: center;
+    color: white;
+    background-color: black;
+    width: 100%;
 }
 /* Media Queries */
 @media only screen and (max-width: 688px){
@@ -128,15 +146,29 @@ color: #FFC014;
     {
        width: 100%;
     }
-    .main-product, .popular-collections
+    .main-product, .popular-collections, .studio-features 
     {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);  }
+        
+        
+    .product, .studio-features
+    {
+        text-align: center;
+        
     }
-    .product
-    {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } }
+
+     /* tablet device  */
+   @media only screen and (min-width:688px) and (max-width:992px) {
+       }
+    .container{
+        width: 100%;
+        
+    }
+     .popular-collections, .studio-features{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    
+}
 
 
