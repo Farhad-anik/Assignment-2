@@ -15,9 +15,8 @@ main{
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    
-   
+    justify-content:end; 
+    margin-right: 50px;
 }
 nav a{
     text-decoration: none;
@@ -28,6 +27,7 @@ nav li
 {
     margin-left: 20px;
 }
+
 .link
 {
     display: flex;
@@ -228,8 +228,28 @@ footer li a{
         text-align: center;
         
     }
-    
-    
 }
+
+    /* for pc */
+    @media only screen and (min-width:1024px) {
+       
+        .container{
+            width: 100%;
+            
+        }
+         .popular-collections, .studio-features{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .product, .studio-features
+        {
+            text-align: center;
+            
+        }
+    }
+
+
+    
+    
+
 
 
