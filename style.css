@@ -122,5 +122,21 @@ color: #FFC014;
 {
     color: #AEAEAE;
 }
+/* Media Queries */
+@media only screen and (max-width: 688px){
+    .container
+    {
+       width: 100%;
+    }
+    .main-product, .popular-collections
+    {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .product
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } }
 
 
