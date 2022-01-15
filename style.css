@@ -31,6 +31,9 @@ nav li
     display: flex;
     
 }
+.title{
+  margin-left: 20px;  
+}
 /* four section in one container */
 .container
 {    
@@ -72,7 +75,6 @@ transition: transform 1s ease-in-out;
 {
     display: flex;
     list-style: none;
-    
     justify-content: center;
     
 }
@@ -195,9 +197,7 @@ footer li a{
           {
             grid-template-columns: repeat(1, 1fr);
             
-          }
-        
-        
+          }     
     .product, .studio-features
     {
         text-align: center;
