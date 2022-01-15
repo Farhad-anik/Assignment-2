@@ -1,0 +1,126 @@
+body{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: blanchedalmond;
+    
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em
+}
+nav li
+{
+    margin-left: 20px;
+}
+.link
+{
+    display: flex;
+    
+}
+.container
+{   display: grid;
+    align-items: center;
+    background-color: cornsilk;
+    width: 900px;
+    padding: 30px;
+    margin-top: 21px;
+    
+    
+}
+.main-product
+{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    
+}
+.button
+{
+    text-decoration: none;
+    
+    color: white;
+    border: 2px solid blueviolet;
+    background-color: blueviolet
+    ;
+    padding: 5px;
+    border-radius: 20px;
+}
+.logo ul
+{
+    display: flex;
+    list-style: none;
+    
+    justify-content: center;
+    
+}
+.logo ul li
+{
+    
+    margin-left: 25px;
+
+}
+
+/* Popular Collection */
+
+.popular-collections
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px; 
+    grid-row-gap: 30px;  
+    
+
+}
+.ProductOfImage
+{width: 150px;
+    height: 100%;
+}
+
+.product
+{
+    display: grid;
+    align-items: center;
+    
+    background-color: rgb(230, 218, 218);
+    
+}
+.product-detail
+{
+    width: 180px;
+}
+
+
+.section-title
+{
+    text-align: center;
+}
+
+
+
+.fa-star
+{
+font-size: 12px;
+}
+.fa-star.filled
+{
+
+color: #FFC014;
+}
+.fa-star.empty
+{
+    color: #AEAEAE;
+}
+
+
