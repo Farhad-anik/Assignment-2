@@ -150,7 +150,7 @@ color: #FFC014;
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 25px;
+    grid-column-gap: 15px;
     margin-top: 20px;
         
 }
