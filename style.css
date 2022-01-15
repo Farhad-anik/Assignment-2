@@ -1,17 +1,15 @@
 body{
     font-family: 'Poppins', sans-serif;
-font-family: 'Roboto Condensed', sans-serif;
-
+    font-family: 'Roboto Condensed', sans-serif;
 }
+/* main part */
 main{
     
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;   
 }
-    
-
+ /* navigation part    */
 nav ul{
     list-style: none;
     display: flex;
@@ -33,15 +31,15 @@ nav li
     display: flex;
     
 }
+/* four section in one container */
 .container
-{  
-    
+{    
     background-color: #FFFFFF;
     width: 900px;
-    margin-top: 20px;
-    
+    margin-top: 20px; 
+    margin-left: 20px;
 }
-
+/* first section */
 .main-product
 {
     
@@ -69,6 +67,7 @@ transition: transform 1s ease-in-out;
     padding: 5px;
     border-radius: 20px;
 }
+/* logo picture in ecommers of second section*/
 .logo ul
 {
     display: flex;
@@ -78,31 +77,26 @@ transition: transform 1s ease-in-out;
     
 }
 .logo ul li
-{
-    
+{  
     margin-left: 10px;
-
 }
 
-/* Popular Collection */
+/* Popular Collection of third section */
 .section-title
 {
     text-align: center;
 }
 .popular-collections
-{
-    
+{   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    
-    
+       
 } 
 .ProductOfImage
 {
-    margin: 15px;
-   
+    margin: 15px;  
 }
 .product
 {
@@ -120,13 +114,13 @@ transition: transform 1s ease-in-out;
     text-align: justify;
     margin-right: 10px;
 }
+/* Star icon */
 .fa-star .fa-star-half-alt
 {
 font-size: 12px;
 }
 .fa-star.filled 
 {
-
 color: #FFC014;
 }
 .fa-star-half-alt
@@ -151,18 +145,21 @@ color: #FFC014;
     text-decoration: none;
     color: blueviolet; 
 }
+/* four section */
 .studio-features
 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 15px;
+    grid-column-gap: 25px;
     margin-top: 20px;
-    
+        
 }
-.photo-studio
+.studio-info
 {
-   display: flex;
+    text-align: justify;
 }
+
+/* footer section */
 footer
 {
     text-align: center;
@@ -175,10 +172,7 @@ footer ul{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-right: 20px;
-    
-    
-    
+    margin-right: 20px;   
 }
 footer li{
     margin-right: 15px;
@@ -187,7 +181,7 @@ footer li a{
     color: white;
 }
 
-/* Media Queries */
+/* Media Queries for mobile device*/
 @media only screen and (max-width: 688px){
     .container
     {
@@ -211,7 +205,7 @@ footer li a{
     }
 }
 
-     /* tablet device  */
+     /* for tablet device  */
    @media only screen and (min-width:688px) and (max-width:992px) {
        
     .container{
@@ -228,7 +222,7 @@ footer li a{
     }
 }
 
-    /* for pc */
+    /* for computer laptop device */
     @media only screen and (min-width:1024px) and (max-width:1280px) {
        
         .container{
