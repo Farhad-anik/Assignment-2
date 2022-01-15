@@ -8,6 +8,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
     
 
@@ -38,6 +39,7 @@ nav li
     background-color: #FFFFFF;
     width: 900px;
     margin-top: 20px;
+    
 }
 
 .main-product
@@ -78,7 +80,7 @@ transition: transform 1s ease-in-out;
 .logo ul li
 {
     
-    margin-left: 25px;
+    margin-left: 15px;
 
 }
 
@@ -94,6 +96,7 @@ transition: transform 1s ease-in-out;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    
     
 } 
 .ProductOfImage
@@ -114,6 +117,8 @@ transition: transform 1s ease-in-out;
 .product-detail
 {
     margin-left: 10px;
+    text-align: justify;
+    margin-right: 10px;
 }
 .fa-star .fa-star-half-alt
 {
@@ -175,9 +180,13 @@ footer ul{
     margin-right: 20px;
     
     
+    
 }
 footer li{
     margin-right: 15px;
+}
+footer li a{
+    color: white;
 }
 
 /* Media Queries */
@@ -213,6 +222,11 @@ footer li{
     }
      .popular-collections, .studio-features{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .product, .studio-features
+    {
+        text-align: center;
+        
     }
     
     
