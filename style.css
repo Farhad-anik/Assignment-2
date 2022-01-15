@@ -146,9 +146,15 @@ footer
     {
        width: 100%;
     }
-    .main-product, .popular-collections, .studio-features 
+    .main-product,  .studio-features 
     {
-        grid-template-columns: repeat(1, 1fr);  }
+        grid-template-columns: repeat(1, 1fr);
+          }
+          .popular-collections
+          {
+            grid-template-columns: repeat(1, 1fr);
+            
+          }
         
         
     .product, .studio-features
@@ -156,10 +162,11 @@ footer
         text-align: center;
         
     }
+}
 
      /* tablet device  */
    @media only screen and (min-width:688px) and (max-width:992px) {
-       }
+       
     .container{
         width: 100%;
         
