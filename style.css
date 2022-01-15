@@ -80,7 +80,7 @@ transition: transform 1s ease-in-out;
 .logo ul li
 {
     
-    margin-left: 15px;
+    margin-left: 10px;
 
 }
 
@@ -149,9 +149,7 @@ color: #FFC014;
 .see-more a
 {
     text-decoration: none;
-    color: blueviolet;
-    
-   
+    color: blueviolet; 
 }
 .studio-features
 {
@@ -231,7 +229,7 @@ footer li a{
 }
 
     /* for pc */
-    @media only screen and (min-width:1024px) {
+    @media only screen and (min-width:1024px) and (max-width:1280px) {
        
         .container{
             width: 100%;
